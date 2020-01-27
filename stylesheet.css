@@ -1,20 +1,205 @@
-/* Controls the Nav section */
-
-nav {
-	background-color:#383E4C;
+/* the Universal CSS Selector controls EVERY HTML element */
+* {
+	font-family:Helvetica;
+	margin:0px; /* Removes the margins from around the webpage */
 }
 
-a:link, a:visited, a:active {
+/* Controls the Nav section */
+#nav_section {
+	background-color:#383E4C;
+	padding:25px;
+	position:fixed; /* makes the selected element scroll down w/ the page */
+	position-top:100%;
+	text-align:center; /* centers all the links in the nav */
+	width:100%;
+	z-index:1; /* brings the selected element to front above all other elements */
+}
+
+/* Controls the links in the Nav section */
+a.nav_links:link, a.nav_links:visited, a.nav_links:active {
 	background-color:#383E4C;
 	border:1px solid #646d7c;
 	color:#fff;
-	padding:15px 25px;
-	text-decoration:none;
+	margin:5px; /* controls the spacing outside the borders of each button */ /* pushes the buttons apart from each other */
+	padding-top:15px;
+	padding-right:25px;
+	padding-bottom:15px;
+	padding-left:25px;
+	text-decoration:none; /* removes the link underlines */
+}
+a.nav_links:hover {
+	background-color:#49505F; 
 }
 
-#Homepage { background-color:#49505F; }
+/* Controls the CONQUER img */
+#conquer {
+	height:614px;
+	width:930px; /* the image is not big enough to cover the webpage at its current size */
+}
 
-a:hover{ background-color:#49505F; }
+/* Controls the CONQUER Header text */
+#conquer_header_1 {
+	color:#fff;
+	font-size:70px;
+	position:absolute;
+	text-align:center;
+	top:25%;
+	left:40%;
+}
+
+#conquer_header_2 {
+	color:#fff;
+	font-size:25px;
+	position:absolute;
+	text-align:center;
+	top:35%;
+	left:50%;
+}
+
+/* Controls the first row of the About Us section */
+
+/* 1. puts the row into a container itself */
+/* we put the columns into a row so that we can move the container and all columns in it */
+.about_us_container_1 {
+	padding-top:70px;
+	width:750px; /* this shortens the length of each column */
+}
+
+/* creates a row within the container */
+.row {
+	background-color:#fff; /*  */
+	content: "";
+	display:table; /* displays the row like a <table> */
+	clear:both;
+}
+
+.column {
+	background-color:#fff; /* controls the background-color of the column */
+	box-sizing:border-box;
+	float:left; /* when you float right, the bootstrap and parallax switch sides */
+	padding-right:15px;
+	padding-left:15px;
+	width:33.33%;
+}
+
+/* Controls ALL <h2> elements */
+h2{
+	font-size:20px;
+	padding:20px;
+	margin-top:;
+	margin-top:;
+	margin-top:;
+	margin-top:;
+}
+
+.content{
+	background-color:#e5e5e5; /* puts a background behind the content in the column */
+}
+
+/* the pictures take up the full length of the content div */
+#rd_picture {
+	height:110px;
+	width:220px;
+}
+
+/* control the color of the h2 element in the first column of of the first half of the 'About Us' section */
+#bootstrap_v3 {
+	color:#178A27;
+}
+
+#responsive_design {
+	color:#1686C1;
+}
+
+#parallax_layout {
+	color:#666;
+}
+
+/* Controls the text within the columns */
+#au_text {
+	font-size:14px;
+	padding-top:0px;
+	padding-right:20px;
+	padding-bottom:35px;
+	padding-left:20px;
+}
+
+/*******************************************************************************/
+/* About Us section */
+
+/* Controls the links within the columns of the first half of the 'About Us' section */
+
+/* Button Green link */
+a.btn_green_link:link, a.btn_green_link:visited, a.btn_green_link:active {
+	background-color:#178A27;
+	border-radius:5px; /* rounds the edges of the box around the link's content */
+	color:#fff;
+	font-size:18px;
+	margin:20px; /* helps center the button */
+	padding-top:10px; /* increases the padding around the link's content */
+	padding-right:35px;
+	padding-bottom:10px;
+	padding-left:35px;
+	text-decoration:none;
+}
+a.btn_green_link:hover {
+	background-color:#178A27;
+}
+
+/* See Details link */
+a.see_details_link:link, a.see_details_link:visited, a.see_details_link:active {
+	background-color:#1686C1;
+	border-radius:5px;
+	color:#fff;
+	font-size:18px;
+	margin:20px; /* helps center the button */
+	padding-top:10px; /* increases the padding around the link's content */
+	padding-right:35px;
+	padding-bottom:10px;
+	padding-left:35px;
+	text-decoration:none;
+}
+a.see_details_link:hover {
+	background-color:#337ab7;
+}
+
+/* Button Red link */
+a.btn_red_link:link, a.btn_red_link:visited, a.btn_red_link:active {
+	background-color:#852406;
+	border-radius:5px;
+	color:#fff;
+	font-size:18px;
+	margin:20px; /* helps center the button */
+	padding-top:10px; /* increases the padding around the link's content */
+	padding-right:35px;
+	padding-bottom:10px;
+	padding-left:35px;
+	text-decoration:none;
+}
+a.btn_red_link:hover {
+	background-color:#852406;
+}
+
+/* controls the second half of the 'About Us' section */
+
+#about_us_container_2{
+	background-color:red;
+	margin:20px; /* puts a margin around the second container */
+}
+
+#row_2{
+	background-color:black;
+	display:table;
+}
+
+.columns_2{
+	background-color:#fff;
+}
 
 
-/* Controls the Header section */
+
+/*******************************************************************************/
+
+#footer {
+	text-align:center;
+}
