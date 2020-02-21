@@ -1,10 +1,13 @@
-/* the Universal CSS Selector controls EVERY HTML element */
-* {
+body{
 	font-family:Helvetica;
-	margin:0px; /* Removes the margins from around the webpage */
+
+	/* Removes the margins from around the webpage */
+	margin:0px;
 }
 
-/* Controls the Nav section */
+/*******************************************************************************/
+/* SECTION 1: HEADER AREA */
+
 #nav_section {
 	background-color:#383E4C;
 	padding:25px;
@@ -52,48 +55,43 @@ a.nav_links:hover {
 	font-size:25px;
 	position:absolute;
 	text-align:center;
-	top:35%;
+	top:40%;
 	left:50%;
 }
 
-/* Controls the first row of the About Us section */
+/*******************************************************************************/
+/* SECTION 2: FEATURE AREA */
 
-/* 1. puts the row into a container itself */
-/* we put the columns into a row so that we can move the container and all columns in it */
 .about_us_container_1 {
-	padding-top:70px;
-	width:750px; /* this shortens the length of each column */
+	padding-top:70px; /* Controls the spacing between SECTION 1 and 2 */
+	width:750px; /* stops the container from changing sizes when you resize the browser */
 }
 
 /* creates a row within the container */
 .row {
-	background-color:#fff; /*  */
-	content: "";
-	display:table; /* displays the row like a <table> */
-	clear:both;
+
+	/* displays the row like a <table> */
+	display:table;
 }
 
 .column {
 	background-color:#fff; /* controls the background-color of the column */
+
+	/* prevents content inside a container from overlapping the outside container */
 	box-sizing:border-box;
 	float:left; /* when you float right, the bootstrap and parallax switch sides */
-	padding-right:15px;
-	padding-left:15px;
+	padding:0px 15px 0px 15px;
 	width:33.33%;
 }
 
-/* Controls ALL <h2> elements */
-h2{
-	font-size:20px;
+h2 {
+	font-size:19px; /* the largest the headers can be and stay on the same line */
 	padding:20px;
-	margin-top:;
-	margin-top:;
-	margin-top:;
-	margin-top:;
 }
 
-.content{
+.content {
 	background-color:#e5e5e5; /* puts a background behind the content in the column */
+	padding-bottom:30px; /* increases the size of the bottom of the box around the content */
 }
 
 /* the pictures take up the full length of the content div */
@@ -104,15 +102,15 @@ h2{
 
 /* control the color of the h2 element in the first column of of the first half of the 'About Us' section */
 #bootstrap_v3 {
-	color:#178A27;
+	color:#10601B;
 }
 
 #responsive_design {
-	color:#1686C1;
+	color:#0F5D87;
 }
 
 #parallax_layout {
-	color:#666;
+	color:#5D1904;
 }
 
 /* Controls the text within the columns */
@@ -124,14 +122,9 @@ h2{
 	padding-left:20px;
 }
 
-/*******************************************************************************/
-/* About Us section */
-
-/* Controls the links within the columns of the first half of the 'About Us' section */
-
 /* Button Green link */
 a.btn_green_link:link, a.btn_green_link:visited, a.btn_green_link:active {
-	background-color:#178A27;
+	background-color:#10601B;
 	border-radius:5px; /* rounds the edges of the box around the link's content */
 	color:#fff;
 	font-size:18px;
@@ -146,9 +139,9 @@ a.btn_green_link:hover {
 	background-color:#178A27;
 }
 
-/* See Details link */
+/* 'See Details' link */
 a.see_details_link:link, a.see_details_link:visited, a.see_details_link:active {
-	background-color:#1686C1;
+	background-color:#0F5D87;
 	border-radius:5px;
 	color:#fff;
 	font-size:18px;
@@ -160,12 +153,12 @@ a.see_details_link:link, a.see_details_link:visited, a.see_details_link:active {
 	text-decoration:none;
 }
 a.see_details_link:hover {
-	background-color:#337ab7;
+	background-color:#1686C1;
 }
 
 /* Button Red link */
 a.btn_red_link:link, a.btn_red_link:visited, a.btn_red_link:active {
-	background-color:#852406;
+	background-color:#5D1904;
 	border-radius:5px;
 	color:#fff;
 	font-size:18px;
@@ -181,24 +174,94 @@ a.btn_red_link:hover {
 }
 
 /* controls the second half of the 'About Us' section */
-
-#about_us_container_2{
-	background-color:red;
+#about_us_container_2 {
+	background-color:#fff;
 	margin:20px; /* puts a margin around the second container */
+	width:935px;
 }
 
-#row_2{
-	background-color:black;
+#row_2 {
 	display:table;
 }
 
 .columns_2{
-	background-color:#fff;
+	box-sizing:border-box;
+	float:left; /* to make the clolumns sit side-by-side, you make THE COLUMN float to the left */
+	margin:20px;
+	width:345px; /* controls the size of each column within the row */ /* makes the column the exact same size as the picture */
 }
 
+#extra_padding_column_content_2 {
+	padding-bottom:51px; /* adds padding to the bottom of the left column */
+}
 
+.column_content_2 {
+	background-color:#e5e5e5; /* we add the background-color to the CONTENT not the COLUMN */
+	padding-bottom:30px;
+}
+
+.row_2_img {
+	height:149.19px;
+	width:345px;
+}
+
+.row_2_text {
+	font-size:14px;
+	padding:27px;
+	text-align:left;
+}
+
+a#row_2_link:link, a#row_2_link:visited, a#row_2_link:active {
+	background-color:#fff;
+	border:1px solid #ccc;
+	border-radius:5px;
+	color:#666;
+	font-size:18px;
+	margin:20px 0px 0px 90px; /* helps center the button */
+	padding-top:10px; /* increases the padding around the link's content */
+	padding-right:30px;
+	padding-bottom:10px;
+	padding-left:30px;
+	text-decoration:none;
+}
+a#row_2_link:hover {
+	background-color:#E6E6E6;
+}
 
 /*******************************************************************************/
+/* SECTION 3: SERVICES AREA */
+
+#service_area_container1{
+	color:white;
+	text-align:center;
+}
+
+#service_area_row1_imgs{
+	height:313px;
+	width:100%;
+}
+
+#service_area_row1{}
+
+#service_area_column1{}
+
+#service_area_content1{
+	position:absolute;
+	left:50%;
+	top:1800px;
+}
+
+#service_area_content2{
+	position:absolute;
+	left:50%;
+	top:1900px;
+}
+
+/*******************************************************************************/
+/* SECTION 4: CONTACT AREA */
+
+/*******************************************************************************/
+/* FOOTER AREA */
 
 #footer {
 	text-align:center;
