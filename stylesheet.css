@@ -1,20 +1,14 @@
 body{
-	font-family:Helvetica;
-
-	/* Removes the margins from around the webpage */
-	margin:0px;
+	margin:0px; /* removes the margin around the webpage */
 }
 
-/*******************************************************************************/
-/* SECTION 1: HEADER AREA */
-
-#nav_section {
-	background-color:#383E4C;
-	padding:25px;
-	position:fixed; /* makes the selected element scroll down w/ the page */
-	position-top:100%;
-	text-align:center; /* centers all the links in the nav */
-	width:100%;
+/********************************************************************************/
+#nav_section{
+	background-color:#383E4C; /* colors the background of the nav section */
+	padding:25px; /* adds padding inside the nav section around the buttons */
+	position:fixed; /* makes the nav scroll down w/ the page */
+	position-top:100%; /* positions the nav_section at the very top of the page */
+	width:1903px; /* default width of the page */
 	z-index:1; /* brings the selected element to front above all other elements */
 }
 
@@ -23,104 +17,116 @@ a.nav_links:link, a.nav_links:visited, a.nav_links:active {
 	background-color:#383E4C;
 	border:1px solid #646d7c;
 	color:#fff;
+	font-size:16px;
 	margin:5px; /* controls the spacing outside the borders of each button */ /* pushes the buttons apart from each other */
-	padding-top:15px;
-	padding-right:25px;
-	padding-bottom:15px;
-	padding-left:25px;
+	padding:15px 25px;
+	text-align:center;
 	text-decoration:none; /* removes the link underlines */
 }
 a.nav_links:hover {
 	background-color:#49505F; 
 }
 
-/* Controls the CONQUER img */
-#conquer {
-	height:614px;
-	width:930px; /* the image is not big enough to cover the webpage at its current size */
-}
+/********************************************************************************/
+/* section 1: Homepage */
 
-/* Controls the CONQUER Header text */
-#conquer_header_1 {
-	color:#fff;
-	font-size:70px;
-	position:absolute;
-	text-align:center;
-	top:25%;
-	left:40%;
-}
-
-#conquer_header_2 {
-	color:#fff;
-	font-size:25px;
-	position:absolute;
-	text-align:center;
-	top:40%;
-	left:50%;
+#section1{
+	background-color:red;
+	padding:100px;
 }
 
 /*******************************************************************************/
-/* SECTION 2: FEATURE AREA */
+/* Section 2: About Us Part 1 */
 
-.about_us_container_1 {
-	padding-top:70px; /* Controls the spacing between SECTION 1 and 2 */
-	width:750px; /* stops the container from changing sizes when you resize the browser */
+#section2{
+	background-color:yellow;
+	padding:100px;
 }
 
-/* creates a row within the container */
-.row {
+.about_us_container_1{
+	/* background-color:green; */ /* shows you the size of the container */
+	width:1170px;
+}
 
-	/* displays the row like a <table> */
+.about_us_row_1{
+	/* background-color:blue; */ /* shows you the size of the row */
 	display:table;
 }
 
-.column {
-	background-color:#fff; /* controls the background-color of the column */
-
-	/* prevents content inside a container from overlapping the outside container */
+/* controls the columns */
+.about_us_columns_1{
+	/* background-color:red; */ /* shows you the size of the column */
 	box-sizing:border-box;
-	float:left; /* when you float right, the bootstrap and parallax switch sides */
-	padding:0px 15px 0px 15px;
+	float:left;
+	padding-right:15px; /* aligns the column picture w/ the background */
+	padding-left:15px;
 	width:33.33%;
 }
 
-h2 {
-	font-size:19px; /* the largest the headers can be and stay on the same line */
-	padding:20px;
+.about_us_content_1{
+	background-color:#F2F2F2;
+	padding-bottom:40px;
+	text-align:center; /* aligns the column heading and link to the center */
 }
 
-.content {
-	background-color:#e5e5e5; /* puts a background behind the content in the column */
-	padding-bottom:30px; /* increases the size of the bottom of the box around the content */
+.about_us_img{
+	max-width:100%;
 }
 
-/* the pictures take up the full length of the content div */
-#rd_picture {
-	height:110px;
-	width:220px;
+.about_us_content_text{
+	margin-top:15px; /* adds spacing between the column text and the column heading */
+	padding:0px 20px 35px; /* adds space between the text and the column */
+	text-align:left; /* aligns the column text to the left */
 }
 
-/* control the color of the h2 element in the first column of of the first half of the 'About Us' section */
-#bootstrap_v3 {
-	color:#10601B;
+/*******************************************************************************/
+/* Section 2: About Us Part 2 */
+
+#about_us_section_2{
+	margin-top:60px;
+	margin-bottom:60px;
 }
 
-#responsive_design {
-	color:#0F5D87;
+.about_us_container_2{
+	background-color:green; */ /* shows you the size of the container */
+	padding-right:15px; /* aligns the column picture w/ the background */
+	padding-left:15px;
+	width:1170px;
 }
 
-#parallax_layout {
-	color:#5D1904;
+.about_us_row_2{
+	/* background-color:blue; */ /* shows you the size of the row */
+	display:table;
 }
 
-/* Controls the text within the columns */
-#au_text {
-	font-size:14px;
-	padding-top:0px;
-	padding-right:20px;
-	padding-bottom:35px;
-	padding-left:20px;
+/* controls the columns */
+.about_us_columns_2{
+	/* background-color:red; */ /* shows you the size of the column */
+	box-sizing:border-box;
+	float:left;
+	padding-right:15px; /* aligns the column picture w/ the background */
+	padding-left:15px;
+	width:50%;
 }
+
+.about_us_content_2{
+	background-color:#F2F2F2;
+	padding-bottom:40px;
+	text-align:center; /* aligns the column heading and link to the center */
+}
+
+.about_us_img{
+	max-width:100%;
+}
+
+.about_us_content_text{
+	margin-top:15px; /* adds spacing between the column text and the column heading */
+	padding:0px 20px 35px; /* adds space between the text and the column */
+	text-align:left; /* aligns the column text to the left */
+}
+
+/*******************************************************************************/
+/* controls the links in the About Us */
 
 /* Button Green link */
 a.btn_green_link:link, a.btn_green_link:visited, a.btn_green_link:active {
@@ -173,96 +179,39 @@ a.btn_red_link:hover {
 	background-color:#852406;
 }
 
-/* controls the second half of the 'About Us' section */
-#about_us_container_2 {
-	background-color:#fff;
-	margin:20px; /* puts a margin around the second container */
-	width:935px;
-}
+/*******************************************************************************/
+/* section 3: Services */
 
-#row_2 {
-	display:table;
-}
-
-.columns_2{
-	box-sizing:border-box;
-	float:left; /* to make the clolumns sit side-by-side, you make THE COLUMN float to the left */
-	margin:20px;
-	width:345px; /* controls the size of each column within the row */ /* makes the column the exact same size as the picture */
-}
-
-#extra_padding_column_content_2 {
-	padding-bottom:51px; /* adds padding to the bottom of the left column */
-}
-
-.column_content_2 {
-	background-color:#e5e5e5; /* we add the background-color to the CONTENT not the COLUMN */
-	padding-bottom:30px;
-}
-
-.row_2_img {
-	height:149.19px;
-	width:345px;
-}
-
-.row_2_text {
-	font-size:14px;
-	padding:27px;
-	text-align:left;
-}
-
-a#row_2_link:link, a#row_2_link:visited, a#row_2_link:active {
-	background-color:#fff;
-	border:1px solid #ccc;
-	border-radius:5px;
-	color:#666;
-	font-size:18px;
-	margin:20px 0px 0px 90px; /* helps center the button */
-	padding-top:10px; /* increases the padding around the link's content */
-	padding-right:30px;
-	padding-bottom:10px;
-	padding-left:30px;
-	text-decoration:none;
-}
-a#row_2_link:hover {
-	background-color:#E6E6E6;
+#section3{
+	background-color:blue;
+	padding:100px;
 }
 
 /*******************************************************************************/
-/* SECTION 3: SERVICES AREA */
+/* section 4: Contact */
 
-#service_area_container1{
-	color:white;
-	text-align:center;
-}
-
-#service_area_row1_imgs{
-	height:313px;
-	width:100%;
-}
-
-#service_area_row1{}
-
-#service_area_column1{}
-
-#service_area_content1{
-	position:absolute;
-	left:50%;
-	top:1800px;
-}
-
-#service_area_content2{
-	position:absolute;
-	left:50%;
-	top:1900px;
+#section4{
+	background-color:green;
+	padding:100px;
 }
 
 /*******************************************************************************/
-/* SECTION 4: CONTACT AREA */
-
-/*******************************************************************************/
-/* FOOTER AREA */
+/* footer area */
 
 #footer {
+	background-color:orange;
 	text-align:center;
 }
+
+#horizontal{
+	margin-top:20px;
+	margin-bottom:20px;
+	border-top:1px solid #eee;
+}
+
+#copy{
+	color:#666;
+	font-size:12px;
+}
+
+/******************************************************************************/
