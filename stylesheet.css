@@ -41,11 +41,11 @@ a.nav_links:hover {
 /* Section 2: About Us - Part 1 */
 
 #section2{
-	background-color:yellow; /* shows you the size of the section */
+	/* background-color:yellow; /* shows you the size of the section */
 }
 
 .about_us_container_1{
-	/* background-color:green; */ /* shows you the size of the container */
+	/* background-color:green; /* shows you the size of the container */
 	padding-top:70px; /* adds space between the first container and section 1 */
 	width:1170px;
 }
@@ -202,7 +202,7 @@ a#about_us_read_more_link:hover {
 /* Section 3: Services - Part 2 */
 
 #section3{
-	background-color:orange; */ /* shows you the size of the section */
+	/* background-color:orange; /* shows you the size of the section */
 }
 
 .services_section_1{
@@ -231,13 +231,13 @@ a#about_us_read_more_link:hover {
 
 /*******************************************************************************/
 
-/*
-
 #services_section_2{
 	background-color:yellow;
 	margin-top:60px;
 	margin-bottom:60px;
 }
+
+/*
 
 .services_container_2{
 	background-color:red;
