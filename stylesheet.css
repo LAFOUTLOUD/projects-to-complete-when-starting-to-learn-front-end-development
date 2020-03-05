@@ -3,6 +3,8 @@ body{
 }
 
 /********************************************************************************/
+/* Controls the Nav */
+
 #nav_section{
 	background-color:#383E4C; /* colors the background of the nav section */
 	padding:25px; /* adds padding inside the nav section around the buttons */
@@ -28,7 +30,7 @@ a.nav_links:hover {
 }
 
 /********************************************************************************/
-/* section 1: Homepage */
+/* Section 1: Homepage */
 
 #section1{
 	background-color:red;
@@ -36,15 +38,15 @@ a.nav_links:hover {
 }
 
 /*******************************************************************************/
-/* Section 2: About Us Part 1 */
+/* Section 2: About Us - Part 1 */
 
 #section2{
-	background-color:yellow;
-	padding:100px;
+	background-color:yellow; /* shows you the size of the section */
 }
 
 .about_us_container_1{
 	/* background-color:green; */ /* shows you the size of the container */
+	padding-top:70px; /* adds space between the first container and section 1 */
 	width:1170px;
 }
 
@@ -58,9 +60,9 @@ a.nav_links:hover {
 	/* background-color:red; */ /* shows you the size of the column */
 	box-sizing:border-box;
 	float:left;
-	padding-right:15px; /* aligns the column picture w/ the background */
+	padding-right:15px; /* aligns the column picture w/ the background color */ /* for consistency, the padding around every column is the same */
 	padding-left:15px;
-	width:33.33%;
+	width:33.33%; /* organizes the columns into 3 columns inside the row */
 }
 
 .about_us_content_1{
@@ -80,17 +82,15 @@ a.nav_links:hover {
 }
 
 /*******************************************************************************/
-/* Section 2: About Us Part 2 */
+/* Section 2: About Us - Part 2 */
 
 #about_us_section_2{
-	margin-top:60px;
-	margin-bottom:60px;
+	margin-top:70px; /* adds space between the second part of section 2 and the first */
+	margin-bottom:70px; /* for consistency, the margins between around every section is the same */
 }
 
 .about_us_container_2{
-	background-color:green; */ /* shows you the size of the container */
-	padding-right:15px; /* aligns the column picture w/ the background */
-	padding-left:15px;
+	/* background-color:green; */ /* shows you the size of the container */
 	width:1170px;
 }
 
@@ -128,7 +128,7 @@ a.nav_links:hover {
 /*******************************************************************************/
 /* controls the links in the About Us */
 
-/* Button Green link */
+/* Button Green Link */
 a.btn_green_link:link, a.btn_green_link:visited, a.btn_green_link:active {
 	background-color:#10601B;
 	border-radius:5px; /* rounds the edges of the box around the link's content */
@@ -145,7 +145,7 @@ a.btn_green_link:hover {
 	background-color:#178A27;
 }
 
-/* 'See Details' link */
+/* 'See Details' Link */
 a.see_details_link:link, a.see_details_link:visited, a.see_details_link:active {
 	background-color:#0F5D87;
 	border-radius:5px;
@@ -162,7 +162,7 @@ a.see_details_link:hover {
 	background-color:#1686C1;
 }
 
-/* Button Red link */
+/* Button Red Link */
 a.btn_red_link:link, a.btn_red_link:visited, a.btn_red_link:active {
 	background-color:#5D1904;
 	border-radius:5px;
@@ -179,13 +179,102 @@ a.btn_red_link:hover {
 	background-color:#852406;
 }
 
+/* Read More Link */
+a#about_us_read_more_link:link, a#about_us_read_more_link:visited, a#about_us_read_more_link:active {
+	background-color:#fff;
+	border:1px solid #ccc;
+	border-radius:5px;
+	color:#666;
+	font-size:18px;
+	margin:20px 0px 0px 90px; /* helps center the button */
+	padding-top:10px; /* increases the padding around the link's content */
+	padding-right:30px;
+	padding-bottom:10px;
+	padding-left:30px;
+	text-decoration:none;
+}
+
+a#about_us_read_more_link:hover {
+	background-color:#E6E6E6;
+}
+
 /*******************************************************************************/
-/* section 3: Services */
+/* Section 3: Services - Part 2 */
 
 #section3{
-	background-color:blue;
-	padding:100px;
+	background-color:orange; */ /* shows you the size of the section */
 }
+
+.services_section_1{
+	background-color:blue; */ /* shows you the size of the first section OF the services section */
+}
+
+.services_container_1{
+	background-color:red; /* shows you the size of the container */
+	padding-top:70px; /* adds space between the 'first container of section 3' and section 2 */
+	width:1170px;
+}
+
+.services_row_1{
+	/* background-color:green; */ /* shows you the size of the row */
+	display:table;
+}
+
+.services_columns_1{
+	background-color:yellow;
+	box-sizing:border-box;
+}
+
+.services_content_1{
+	text-align:center;
+}
+
+/*******************************************************************************/
+
+/*
+
+#services_section_2{
+	background-color:yellow;
+	margin-top:60px;
+	margin-bottom:60px;
+}
+
+.services_container_2{
+	background-color:red;
+	padding-top:70px;
+	width:1170px;
+}
+
+.services_row_2{
+	background-color:green;
+	display:table;
+}
+
+.services_columns_2{
+	 background-color:red;
+	box-sizing:border-box;
+	float:left;
+	padding-right:15px;
+	padding-left:15px;
+	width:33.33%;
+}
+
+.services_content_2{
+	background-color:green;
+	padding-bottom:40px;
+	text-align:center;
+}
+
+.services_img{
+	max-width:100%;
+}
+
+.services_content_text{
+	margin-top:15px;
+	text-align:left;
+}
+
+*/
 
 /*******************************************************************************/
 /* section 4: Contact */
