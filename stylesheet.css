@@ -45,24 +45,17 @@ a.nav_links:hover {
 /*******************************************************************************/
 /* Section 2: About Us - Part 1 */
 
-#section2{
-	/* background-color:yellow; /* shows you the size of the section */
-}
-
 .about_us_container_1{
-	/* background-color:green; /* shows you the size of the container */
 	padding-top:70px; /* adds space between the first container and section 1 */
 	width:1170px;
 }
 
 .about_us_row_1{
-	/* background-color:blue; */ /* shows you the size of the row */
 	display:table;
 }
 
 /* controls the columns */
 .about_us_columns_1{
-	/* background-color:red; */ /* shows you the size of the column */
 	box-sizing:border-box;
 	float:left;
 	padding-right:15px; /* aligns the column picture w/ the background color */ /* for consistency, the padding around every column is the same */
@@ -92,18 +85,15 @@ a.nav_links:hover {
 }
 
 .about_us_container_2{
-	/* background-color:green; */ /* shows you the size of the container */
 	width:1170px;
 }
 
 .about_us_row_2{
-	/* background-color:blue; */ /* shows you the size of the row */
 	display:table;
 }
 
 /* controls the columns */
 .about_us_columns_2{
-	/* background-color:red; */ /* shows you the size of the column */
 	box-sizing:border-box;
 	float:left;
 	padding-right:15px; /* aligns the column picture w/ the background */
@@ -200,14 +190,6 @@ a#about_us_read_more_link:hover {
 /*******************************************************************************/
 /* Section 3: Services - Part 1 */
 
-#section3{
-	/* background-color:orange; /* shows you the size of the section */
-}
-
-.services_section_1{
-	background-color:blue; */ /* shows you the size of the first section OF the services section */
-}
-
 .services_container_1{
 	background-color:red; /* shows you the size of the container */
 	padding-top:70px; /* adds space between the 'first container of section 3' and section 2 */
@@ -215,7 +197,6 @@ a#about_us_read_more_link:hover {
 }
 
 .services_row_1{
-	/* background-color:green; /* shows you the size of the row */
 	display:table;
 }
 
@@ -228,13 +209,6 @@ a#about_us_read_more_link:hover {
 	text-align:center;
 }
 
-/*
-#services_header{
-	margin-top:20px;
-	margin-bottom:20px;
-}
-*/
-
 /*******************************************************************************/
 /* Section 3: Services - Part 2 */
 
@@ -245,17 +219,14 @@ a#about_us_read_more_link:hover {
 }
 
 .services_container_2{
-	/* background-color:red; /* shows you the size of the container */
 	width:1170px;
 }
 
 .services_row_2{
-	/* background-color:green; /* shows you the size of the row */
 	display:table;
 }
 
 .services_columns_2{
-	/* background-color:red; /* shows you the size of the columns */
 	box-sizing:border-box;
 	float:left;
 	padding-right:15px;
@@ -276,7 +247,6 @@ a#about_us_read_more_link:hover {
 }
 
 .services_columns_3{
-	/* background-color:red; /* shows you the size of the columns */
 	box-sizing:border-box;
 	padding-right:15px;
 	padding-left:15px;
@@ -322,21 +292,34 @@ a.service_area_links:hover{
 	background-color:green;
 }
 
+#contact_area{
+	background-color:red;
+	padding-top:80px;
+	padding-bottom:60px;
+}
+
 .contact_container{
 	background-color:blue;
+}
+
+.contact_content_1A{
+	text-align:center;
+}
+
+/* controls the contact form's button */
+#contact_btn{
+	background:#262628; /* colors the button */
+	border:1px solid #ccc; /* changes the border around the button */
+	border-radius:10px; /* rounds the default border around the button */
+	color:#fff; /* colors the text of the button */
+	font-size:18px; /* changes the size of the font of the button */
+	padding:10px 30px; /* adds padding between the button's text and its border */
 }
 
 /*******************************************************************************/
 /* footer area */
 
 #footer {
-	background-color:orange;
-
-	/*
-	position:fixed;
-	bottom:0px;
-	*/
-
 	text-align:center;
 	width:1903px;
 }
@@ -350,6 +333,15 @@ a.service_area_links:hover{
 #copy{
 	color:#666;
 	font-size:12px;
+	margin-top:10px;
+	margin-bottom:30px;
 }
 
 /******************************************************************************/
+/* Extra Padding */
+
+#extra_padding{
+	padding-top:120px;
+	padding-bottom:20px;
+	width:1903px;
+}
