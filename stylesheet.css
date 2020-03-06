@@ -2,6 +2,10 @@ body{
 	margin:0px; /* removes the margin around the webpage */
 }
 
+.img{
+	max-width:100%;
+}
+
 /********************************************************************************/
 /* Controls the Nav */
 
@@ -25,6 +29,7 @@ a.nav_links:link, a.nav_links:visited, a.nav_links:active {
 	text-align:center;
 	text-decoration:none; /* removes the link underlines */
 }
+
 a.nav_links:hover {
 	background-color:#49505F; 
 }
@@ -71,9 +76,6 @@ a.nav_links:hover {
 	text-align:center; /* aligns the column heading and link to the center */
 }
 
-.about_us_img{
-	max-width:100%;
-}
 
 .about_us_content_text{
 	margin-top:15px; /* adds spacing between the column text and the column heading */
@@ -115,9 +117,6 @@ a.nav_links:hover {
 	text-align:center; /* aligns the column heading and link to the center */
 }
 
-.about_us_img{
-	max-width:100%;
-}
 
 .about_us_content_text{
 	margin-top:15px; /* adds spacing between the column text and the column heading */
@@ -199,7 +198,7 @@ a#about_us_read_more_link:hover {
 }
 
 /*******************************************************************************/
-/* Section 3: Services - Part 2 */
+/* Section 3: Services - Part 1 */
 
 #section3{
 	/* background-color:orange; /* shows you the size of the section */
@@ -216,12 +215,12 @@ a#about_us_read_more_link:hover {
 }
 
 .services_row_1{
-	/* background-color:green; */ /* shows you the size of the row */
+	/* background-color:green; /* shows you the size of the row */
 	display:table;
 }
 
 .services_columns_1{
-	background-color:yellow;
+	background-color:green;
 	box-sizing:border-box;
 }
 
@@ -229,59 +228,102 @@ a#about_us_read_more_link:hover {
 	text-align:center;
 }
 
+/*
+#services_header{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+*/
+
 /*******************************************************************************/
+/* Section 3: Services - Part 2 */
 
 #services_section_2{
-	background-color:yellow;
-	margin-top:60px;
-	margin-bottom:60px;
+	background-color:yellow; /* shows you the size of the section */
+	margin-top:70px; /* adds space between the second part of section 2 and the first */
+	margin-bottom:70px;
 }
 
-/*
-
 .services_container_2{
-	background-color:red;
-	padding-top:70px;
+	/* background-color:red; /* shows you the size of the container */
 	width:1170px;
 }
 
 .services_row_2{
-	background-color:green;
+	/* background-color:green; /* shows you the size of the row */
 	display:table;
 }
 
 .services_columns_2{
-	 background-color:red;
+	/* background-color:red; /* shows you the size of the columns */
 	box-sizing:border-box;
 	float:left;
 	padding-right:15px;
 	padding-left:15px;
-	width:33.33%;
+	width:25%;
 }
 
 .services_content_2{
-	background-color:green;
-	padding-bottom:40px;
+	background-color:#F2F2F2;
+	padding-bottom:40px; /* adds space to the bottom of the columns */
 	text-align:center;
 }
 
-.services_img{
-	max-width:100%;
+/* Section 3: Services - row 3 */
+.services_row_3{
+	margin-top:30px; /* adds space between the top row and the bottom row */
+	width:1170px;
 }
 
-.services_content_text{
-	margin-top:15px;
-	text-align:left;
+.services_columns_3{
+	/* background-color:red; /* shows you the size of the columns */
+	box-sizing:border-box;
+	padding-right:15px;
+	padding-left:15px;
+	width:1170px; /* makes the column and the picture in it the same size as the columns above it */
 }
 
-*/
+.services_content_3{
+	background-color:#F2F2F2;
+
+}
+
+#services_content_3_text{
+	padding:30px;
+	text-align:left; /* aligns the heading, text, and position of the link in the 'One Big Column' column */
+}
+
+.services_content_3_text_p{
+	margin-bottom:10px;
+}
+
+/*******************************************************************************/
+/* controls the links in the About Us */
+
+a.service_area_links:link, a.service_area_links:visited, a.service_area_links:active{
+	background-color:#fff; /* adds background color to the area between the link and its padding */
+	border:1px solid #ccc;
+	border-radius:10px;
+	color:#666;
+	font-size:18px;
+	padding:10px 30px; /* adds space around the link to make it resemble a button */
+	text-decoration:none; /* removes the default underline f. the link */
+}
+
+a.service_area_links:hover{
+	background-color:#E6E6E6;
+	color:#23527c; /* changes the color of the text when you hover over the link */
+}
 
 /*******************************************************************************/
 /* section 4: Contact */
 
 #section4{
 	background-color:green;
-	padding:100px;
+}
+
+.contact_container{
+	background-color:blue;
 }
 
 /*******************************************************************************/
@@ -289,7 +331,14 @@ a#about_us_read_more_link:hover {
 
 #footer {
 	background-color:orange;
+
+	/*
+	position:fixed;
+	bottom:0px;
+	*/
+
 	text-align:center;
+	width:1903px;
 }
 
 #horizontal{
