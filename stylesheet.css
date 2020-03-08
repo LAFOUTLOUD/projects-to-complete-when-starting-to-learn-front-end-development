@@ -286,7 +286,7 @@ a.service_area_links:hover{
 }
 
 /*******************************************************************************/
-/* section 4: Contact */
+/* Section 4: Contact Area */
 
 #section4{
 	background-color:green;
@@ -335,6 +335,13 @@ a.service_area_links:hover{
 	font-size:12px;
 	margin-top:10px;
 	margin-bottom:30px;
+}
+
+/******************************************************************************/
+/* Scrolling Link */
+
+#scrollUp{
+	
 }
 
 /******************************************************************************/
