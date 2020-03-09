@@ -217,7 +217,6 @@ a#about_us_read_more_link:hover {
 /* Section 3: Services - Part 2 */
 
 #services_section_2{
-	background-color:yellow; /* shows you the size of the section */
 	margin-top:70px; /* adds space between the second part of section 2 and the first */
 	margin-bottom:70px;
 }
@@ -423,7 +422,6 @@ textarea.form_control{
 	border-radius:10px; /* rounds the default border around the button */
 	box-sizing:border-box;
 	color:#fff; /* colors the text of the button */
-	/* display:block; */
 	font-size:18px; /* changes the size of the font of the button */
 	padding:10px 30px; /* adds padding between the button's text and its border */
 }
