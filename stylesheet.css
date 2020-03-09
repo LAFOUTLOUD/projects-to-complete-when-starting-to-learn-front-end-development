@@ -293,12 +293,12 @@ a.service_area_links:hover{
 /* Section 4: Contact Area */
 
 #section4{
-	background-color:blue;
 	height:600px; /* increases the size of the section and pushes the footer section down */
 }
 
 #contact_area{
 	background-color:red;
+	/* max-width:750px; */
 	padding-top:80px;
 	padding-bottom:60px;
 }
@@ -307,25 +307,27 @@ a.service_area_links:hover{
 	background-color:orange;
 	margin:0px 576.500px; /* centers the entire column in the center of the contact area section */
 	padding:0px 15px; /* puts padding around the left/right sides of the container */
-	/* max-width:750px; */
+	max-width:750px;
 }
 
 #contact_row_1A{
 	display:table; /* changes the display property of the row to act as a table */
 }
 
+#contact_column_1{
+	float:left;
+}
+
 .contact_content_1A{
 	text-align:center; /* centers the header and the text */
 }
 
-/*
-.contact_column{
-	width:345px;
+#contact_row_1B{
+	display:table;
 }
-*/
 
 #contact_column_2{
-	/* padding-left:20px 15px; */
+	float:left;
 	padding-left:15px;
 	padding-right:15px;
 	width:690px; /* makes the width of the column 690px */
@@ -342,25 +344,27 @@ a.service_area_links:hover{
 
 #contact_row_2A{
 	display:table; /* puts both rows into 1 table */
-	width:750px;
+	width:750px; /* controls the size of the row */
 }
 
 /* controls the column containing the input fields */
 #contact_column_form_left{
 	float:left; /* puts the 3 input fields on the left */
-	padding-left:15px; /* makes the column w/ the input fields align with the text above them */
+	padding-left:0px; /* makes the column w/ the input fields align with the text above them */ /* when set to 0, the columns stay side by side */
+	/* padding-right:15px; */
 	width:50%;
 }
 
 #contact_column_form_right{
 	float:left; /* puts the 3 input fields on the left */
+	padding-right:0px; /* makes the column w/ the input fields align with the text above them */ /* when set to 0, the columns stay side by side */
 	width:50%;
 }
 
 .form_control{
 	/* display:block; */
 	margin-bottom:15px; /* adds margins to the bottoms of the input fields to space then out */
-	width:100%;
+	/* width:100%; */
 }
 
 #name_input{
@@ -392,8 +396,9 @@ textarea.form_control{
 	background-color:rgba(242,242,242,0.4);
 	border:none; /* removes the border around the input field */
 	border-radius:4px; /* rounds the borders around the input fields */
-	/* height:auto; */
-	padding:6px 12px;
+	/* flex-direction:column; */
+	height:auto;
+	padding:6px 12px; /* adds padding inside the input field */
 	width:100%;
 }
 
@@ -405,8 +410,12 @@ textarea.form_control{
 	color:#fff; /* colors the text of the button */
 	/* display:inline-block;*/
 	font-size:18px; /* changes the size of the font of the button */
-	margin-top:20px;
+	/* margin-top:20px; /* adds a margin between the textarea and the button */
 	padding:10px 30px; /* adds padding between the button's text and its border */
+}
+
+.form_control{
+	width:100%;
 }
 
 /*******************************************************************************/
