@@ -293,11 +293,13 @@ a.service_area_links:hover{
 /* Section 4: Contact Area */
 
 #section4{
+	box-sizing:border-box;
 	width:1903px;
 }
 
 #contact_area{
 	background-color:red;
+	box-sizing:border-box;
 	/* max-width:750px; */
 	padding-top:80px;
 	padding-bottom:60px;
@@ -306,72 +308,83 @@ a.service_area_links:hover{
 
 .contact_container{
 	background-color:orange;
+	box-sizing:border-box;
 	margin:0px 576.500px; /* centers the entire column in the center of the contact area section */
 	padding:0px 15px; /* puts padding around the left/right sides of the container */
 	max-width:750px;
 }
 
 #contact_row_1A{
+	box-sizing:border-box;
 	display:table; /* changes the display property of the row to act as a table */
 }
 
 #contact_column_1{
+	box-sizing:border-box;
 	float:left;
 }
 
 .contact_content_1A{
+	box-sizing:border-box;
 	text-align:center; /* centers the header and the text */
 }
 
 #contact_row_1B{
+	box-sizing:border-box;
 	display:table;
 }
 
+/* controls the column that the text  */
 #contact_column_2{
+	box-sizing:border-box;
 	float:left;
 	padding-left:15px;
 	padding-right:15px;
-	width:690px; /* makes the width of the column 690px */
+	width:720px; /* makes the width of the column 720px */
 }
 
 /* controls the text above the input fields */
 #contact_text{
 	background-color:rgba(242,242,242,0.4); /* adds a transparent background color behind the text */
 	border-radius:5px; /* rounds the borders around the input fields */
+	box-sizing:border-box;
 	font-size:18px; /* changes the size of the text to 18px */
 	/* margin-bottom:20px; */
-	padding:15px 0px;
+	padding:20px 15px;
 }
 
 #contact_row_2A{
 	display:table; /* puts both rows into 1 table */
-	width:750px; /* controls the size of the row */
+	width:720px; /* controls the size of the row */ /* must be 720 for the columns to line up properly */
+}
+
+#contact_column_3{
+	padding:0px 15px; /* adds padding to the left and right sides of the column containing the inputs */
 }
 
 /* controls the column containing the input fields */
 #contact_column_form_left{
+	box-sizing:border-box;
+	display:block;
 	float:left; /* puts the 3 input fields on the left */
-	padding-left:0px; /* makes the column w/ the input fields align with the text above them */ /* when set to 0, the columns stay side by side */
-	/* padding-right:15px; */
+	padding-right:15px;
 	width:50%;
 }
 
 #contact_column_form_right{
+	box-sizing:border-box;
+	display:block;
 	float:left; /* puts the 3 input fields on the left */
+	padding-left:15px; /* adds padding to the left side of the right column */
 	padding-right:0px; /* makes the column w/ the input fields align with the text above them */ /* when set to 0, the columns stay side by side */
 	width:50%;
-}
-
-.form_control{
-	/* display:block; */
-	margin-bottom:15px; /* adds margins to the bottoms of the input fields to space then out */
-	/* width:100%; */
 }
 
 #name_input{
 	background-color:rgba(242,242,242,0.4); /* adds a transparent background color behind the input field */
 	border:none; /* removes the default border around the input field */
 	border-radius:4px; /* rounds the borders around the input fields */
+	box-sizing:border-box;
 	padding:6px 12px; /* adds padding inside the input field */
 	width:100%; /* the width of the input field is the full length of the column it in */
 }
@@ -380,6 +393,7 @@ a.service_area_links:hover{
 	background-color:rgba(242,242,242,0.4); /* adds a transparent background color behind the input field */
 	border:none; /* removes the border around the input field */
 	border-radius:4px; /* rounds the borders around the input fields */
+	box-sizing:border-box;
 	padding:6px 12px; /* adds padding inside the input field */
 	width:100%; /* the width of the input field is the full length of the column it in */
 }
@@ -388,6 +402,7 @@ a.service_area_links:hover{
 	background-color:rgba(242,242,242,0.4); /* adds a transparent background color behind the input field */
 	border:none; /* removes the border around the input field */
 	border-radius:4px; /* rounds the borders around the input fields */
+	box-sizing:border-box;
 	padding:6px 12px; /* adds padding inside the input field */
 	width:100%; /* the width of the input field is the full length of the column it in */
 }
@@ -397,8 +412,10 @@ textarea.form_control{
 	background-color:rgba(242,242,242,0.4);
 	border:none; /* removes the border around the input field */
 	border-radius:4px; /* rounds the borders around the input fields */
+	box-sizing:border-box;
+	display:block;
 	/* flex-direction:column; */
-	height:auto;
+	/* height:auto; */
 	padding:6px 12px; /* adds padding inside the input field */
 	width:100%;
 }
@@ -408,14 +425,18 @@ textarea.form_control{
 	background:#262628; /* colors the button */
 	border:1px solid #ccc; /* changes the border around the button */
 	border-radius:10px; /* rounds the default border around the button */
+	box-sizing:border-box;
 	color:#fff; /* colors the text of the button */
-	/* display:inline-block;*/
 	font-size:18px; /* changes the size of the font of the button */
 	/* margin-top:20px; /* adds a margin between the textarea and the button */
 	padding:10px 30px; /* adds padding between the button's text and its border */
 }
 
 .form_control{
+	box-sizing:border-box;
+	display:block; /* changes the display properties of the input fields  */
+	/* height:34px; */
+	margin-bottom:15px; /* adds margins to the bottoms of the input fields and the textarea */
 	width:100%;
 }
 
