@@ -293,7 +293,7 @@ a.service_area_links:hover{
 /* Section 4: Contact Area */
 
 #section4{
-	height:600px; /* increases the size of the section and pushes the footer section down */
+	width:1903px;
 }
 
 #contact_area{
@@ -301,6 +301,7 @@ a.service_area_links:hover{
 	/* max-width:750px; */
 	padding-top:80px;
 	padding-bottom:60px;
+	width:1903px;
 }
 
 .contact_container{
@@ -424,6 +425,11 @@ textarea.form_control{
 #footer {
 	text-align:center;
 	width:1903px;
+}
+#footer h1{
+	font-style:italic;
+	margin-top:35px;
+	margin-bottom:25px;
 }
 
 #horizontal{
