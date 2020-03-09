@@ -306,6 +306,23 @@ a.service_area_links:hover{
 	text-align:center;
 }
 
+/*
+.contact_column{
+	width:345px;
+}
+*/
+
+#contact_column_2{
+	/* padding-left:20px 15px; */
+	padding-left:15px;
+	padding-right:15px;
+	width:690px; /* makes the width of the column 690px */
+}
+
+#contact_column_3{
+	width:345px;
+}
+
 #contact_text{
 	background-color:rgba(242,242,242,0.4); /* adds a transparent background color behind the text */
 	font-size:18px; /* changes the size of the text to 18px */
@@ -315,6 +332,7 @@ a.service_area_links:hover{
 
 #contact_column_form_left{
 	float:left; /* puts the 3 input fields on the left */
+	padding-left:15px; */
 	/* padding-right:15px; */
 	width:50%;
 }
@@ -325,20 +343,40 @@ a.service_area_links:hover{
 	width:50%;
 }
 
+.form_control{
+	margin-bottom:15px; /* adds margins to the bottoms of the input fields to space then out */
+}
+
 #name_input{
 	background-color:rgba(242,242,242,0.4); /* adds a transparent background color behind the input field */
-	border:none; /* removes the border around the input field */
-	/* width:100%; */
+	border:none; /* removes the default border around the input field */
+	border-radius:4px; /* rounds the borders around the input fields */
+	padding:6px 12px; /* adds padding inside the input field */
+	width:100%; /* the width of the input field is the full length of the column it in */
 }
 
 #email_input{
 	background-color:rgba(242,242,242,0.4); /* adds a transparent background color behind the input field */
 	border:none; /* removes the border around the input field */
+	border-radius:4px; /* rounds the borders around the input fields */
+	padding:6px 12px; /* adds padding inside the input field */
+	width:100%; /* the width of the input field is the full length of the column it in */
 }
 
 #subject_input{
 	background-color:rgba(242,242,242,0.4); /* adds a transparent background color behind the input field */
 	border:none; /* removes the border around the input field */
+	border-radius:4px; /* rounds the borders around the input fields */
+	padding:6px 12px; /* adds padding inside the input field */
+	width:100%; /* the width of the input field is the full length of the column it in */
+}
+
+/* controls the textarea element */
+textarea.form_control{
+	background-color:rgba(242,242,242,0.4);
+	border:none; /* removes the border around the input field */
+	/* height:auto; */
+	padding:6px 12px;
 }
 
 /* controls the contact form's button */
@@ -347,7 +385,9 @@ a.service_area_links:hover{
 	border:1px solid #ccc; /* changes the border around the button */
 	border-radius:10px; /* rounds the default border around the button */
 	color:#fff; /* colors the text of the button */
+	/* display:inline-block;*/
 	font-size:18px; /* changes the size of the font of the button */
+	margin-top:20px;
 	padding:10px 30px; /* adds padding between the button's text and its border */
 }
 
@@ -387,3 +427,22 @@ a.service_area_links:hover{
 	padding-bottom:20px;
 	width:1903px;
 }
+
+/******************************************************************************/
+/* Notes */
+
+/*
+
+1. Creating nav links
+2. Creating organized columns
+3. you can change a specific element that shares a class w/ others
+
+	// textarea.form_control{ // }
+
+4. You can remove the default border around an input field:
+
+	// border:none;
+
+5. 
+
+*/
