@@ -376,7 +376,6 @@ a.service_area_links:hover{
 	display:block;
 	float:left; /* puts the 3 input fields on the left */
 	padding-left:15px; /* adds padding to the left side of the right column */
-	padding-right:0px; /* makes the column w/ the input fields align with the text above them */ /* when set to 0, the columns stay side by side */
 	width:50%;
 }
 
@@ -414,8 +413,7 @@ textarea.form_control{
 	border-radius:4px; /* rounds the borders around the input fields */
 	box-sizing:border-box;
 	display:block;
-	/* flex-direction:column; */
-	/* height:auto; */
+	font-size:14px; /* must be set to 14 for the textarea to match the input fields */
 	padding:6px 12px; /* adds padding inside the input field */
 	width:100%;
 }
@@ -435,7 +433,6 @@ textarea.form_control{
 .form_control{
 	box-sizing:border-box;
 	display:block; /* changes the display properties of the input fields  */
-	/* height:34px; */
 	margin-bottom:15px; /* adds margins to the bottoms of the input fields and the textarea */
 	width:100%;
 }
