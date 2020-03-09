@@ -2,6 +2,10 @@ body{
 	margin:0px; /* removes the margin around the webpage */
 }
 
+div{
+	display:block;
+}
+
 .img{
 	max-width:100%;
 }
@@ -288,6 +292,11 @@ a.service_area_links:hover{
 /*******************************************************************************/
 /* Section 4: Contact Area */
 
+#section4{
+	background-color:blue;
+	height:600px; /* increases the size of the section and pushes the footer section down */
+}
+
 #contact_area{
 	background-color:red;
 	padding-top:80px;
@@ -295,12 +304,18 @@ a.service_area_links:hover{
 }
 
 .contact_container{
+	background-color:orange;
 	margin:0px 576.500px; /* centers the entire column in the center of the contact area section */
 	padding:0px 15px; /* puts padding around the left/right sides of the container */
+	/* max-width:750px; */
+}
+
+#contact_row_1A{
+	display:table; /* changes the display property of the row to act as a table */
 }
 
 .contact_content_1A{
-	text-align:center;
+	text-align:center; /* centers the header and the text */
 }
 
 /*
@@ -316,10 +331,6 @@ a.service_area_links:hover{
 	width:690px; /* makes the width of the column 690px */
 }
 
-#contact_column_3{
-	width:345px;
-}
-
 /* controls the text above the input fields */
 #contact_text{
 	background-color:rgba(242,242,242,0.4); /* adds a transparent background color behind the text */
@@ -329,21 +340,27 @@ a.service_area_links:hover{
 	padding:15px 0px;
 }
 
+#contact_row_2A{
+	display:table; /* puts both rows into 1 table */
+	width:750px;
+}
+
+/* controls the column containing the input fields */
 #contact_column_form_left{
 	float:left; /* puts the 3 input fields on the left */
-	/* padding-left:15px; */
-	/* padding-right:15px; */
+	padding-left:15px; /* makes the column w/ the input fields align with the text above them */
 	width:50%;
 }
 
 #contact_column_form_right{
 	float:left; /* puts the 3 input fields on the left */
-	/* padding-left:15px; */
 	width:50%;
 }
 
 .form_control{
+	/* display:block; */
 	margin-bottom:15px; /* adds margins to the bottoms of the input fields to space then out */
+	width:100%;
 }
 
 #name_input{
@@ -374,8 +391,10 @@ a.service_area_links:hover{
 textarea.form_control{
 	background-color:rgba(242,242,242,0.4);
 	border:none; /* removes the border around the input field */
+	border-radius:4px; /* rounds the borders around the input fields */
 	/* height:auto; */
 	padding:6px 12px;
+	width:100%;
 }
 
 /* controls the contact form's button */
@@ -421,6 +440,7 @@ textarea.form_control{
 /******************************************************************************/
 /* Extra Padding */
 
+/* controls the extra space underneath the footer section */
 #extra_padding{
 	padding-top:120px;
 	padding-bottom:20px;
