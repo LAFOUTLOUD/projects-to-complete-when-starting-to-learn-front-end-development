@@ -307,7 +307,6 @@ a.service_area_links:hover{
 }
 
 .contact_container{
-	background-color:orange;
 	box-sizing:border-box;
 	margin:0px 576.500px; /* centers the entire column in the center of the contact area section */
 	padding:0px 15px; /* puts padding around the left/right sides of the container */
@@ -349,7 +348,6 @@ a.service_area_links:hover{
 	border-radius:5px; /* rounds the borders around the input fields */
 	box-sizing:border-box;
 	font-size:18px; /* changes the size of the text to 18px */
-	/* margin-bottom:20px; */
 	padding:20px 15px;
 }
 
@@ -425,9 +423,19 @@ textarea.form_control{
 	border-radius:10px; /* rounds the default border around the button */
 	box-sizing:border-box;
 	color:#fff; /* colors the text of the button */
+	/* display:block; */
 	font-size:18px; /* changes the size of the font of the button */
-	/* margin-top:20px; /* adds a margin between the textarea and the button */
 	padding:10px 30px; /* adds padding between the button's text and its border */
+}
+
+#contact_btn:hover{
+	background-color:#fff;
+	color:#333;
+	cursor:pointer; /* makes the cursor change to a pointer icon when you hover over the button */
+}
+
+.form_group{
+	margin-bottom:20px;
 }
 
 .form_control{
@@ -495,6 +503,14 @@ textarea.form_control{
 
 	// border:none;
 
-5. 
+?. creating a hoverable button
+
+	// .button{ // }
+
+	// .button:hover{ // }
+
+?. change the cursor when you hover over a button
+
+	// cursor:pointer;
 
 */
