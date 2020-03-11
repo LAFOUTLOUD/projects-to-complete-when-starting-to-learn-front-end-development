@@ -1,3 +1,8 @@
+/* the universal selector */
+*{
+	box-sizing:border-box; /* defines how the width/height of an element are calculated IF they include padding/borders */
+}
+
 body{
 	margin:0px; /* removes the margin around the webpage */
 }
@@ -9,6 +14,13 @@ div{
 .img{
 	max-width:100%;
 }
+
+/********************************************************************************/
+/* Parallax Scrolling */
+
+.parallax{}
+
+#conquer_image{}
 
 /********************************************************************************/
 /* Controls the Nav */
@@ -210,7 +222,13 @@ a#about_us_read_more_link:hover {
 }
 
 .services_content_1{
+	background-color:orange;
 	text-align:center;
+}
+
+#services_header{
+	color:#fff;
+	text-shadow:2px 2px #aaa; /* the text-shadow property adds shadow to text */ /* syntax: text-shadow:h-shadow (puts a shadow on the right) v-shadow (slants the shadow down) color; */
 }
 
 /*******************************************************************************/
@@ -266,9 +284,11 @@ a#about_us_read_more_link:hover {
 	text-align:left; /* aligns the heading, text, and position of the link in the 'One Big Column' column */
 }
 
+/*
 .services_content_3_text_p{
 	margin-bottom:10px;
 }
+*/
 
 /*******************************************************************************/
 /* controls the links in the About Us */
@@ -487,11 +507,16 @@ textarea.form_control{
 }
 
 /******************************************************************************/
-/* Notes */
+/* Notes
 
-/*
+1. Universe Selector => affects EVERY element in the HTML
 
-1. Creating nav links
+	// *{}
+
+2. box-sizing property => defines how the width/height of an element are calculated IF they include padding/borders
+	(A) border-box => the width/height affect the content, padding and border
+
+2. Creating nav links
 2. Creating organized columns
 3. you can change a specific element that shares a class w/ others
 
@@ -510,5 +535,11 @@ textarea.form_control{
 ?. change the cursor when you hover over a button
 
 	// cursor:pointer;
+
+?. text-shadow property => adds shadow to text
+	(A) syntax: text-shadow: h-shadow v-shadow color;
+		1. h-shadow (mandatory) => puts a shadow on the right
+		2. v-shadow (mandatory) => slants the shadow down
+		3. color (optional) => changes the shadow's color
 
 */
