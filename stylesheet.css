@@ -223,7 +223,6 @@ a#about_us_read_more_link:hover {
 
 .services_content_1{
 	background-color:orange;
-	text-align:center;
 }
 
 #services_header{
@@ -319,7 +318,6 @@ a.service_area_links:hover{
 #contact_area{
 	background-color:red;
 	box-sizing:border-box;
-	/* max-width:750px; */
 	padding-top:80px;
 	padding-bottom:60px;
 	width:1903px;
